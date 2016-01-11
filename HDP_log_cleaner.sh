@@ -2,6 +2,8 @@
 #//Use me to reclaim disk space on HDP clusters.  This will clean log files, clean up zookeeper edits and fsimages, 
 #//and clean ambari-agent output data dir.
 
+
+
 HADOOP_VERSION=`hadoop version | head -1 | cut -c14-16`
 
 if [ -d /var/log/ambari-agent ]; then
