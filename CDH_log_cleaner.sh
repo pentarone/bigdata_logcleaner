@@ -1,6 +1,7 @@
 #!/bin/bash
 #//Use me to reclaim disk space on CDH clusters.  
 
+
 if [ -d /var/log/catalogd ]; then
 	find /var/log/catalogd -type f -mtime +14 -name "catalogd.bad*" -exec rm -f {} \;
 fi
