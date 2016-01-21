@@ -89,5 +89,5 @@ if [ -d /var/lib/cloudera-service-monitor ]; then
 	find /var/lib/cloudera-service-monitor/ts/ts_stream_rollup_PT600S/partitions/ -type d -ctime +2 | xargs rm -rf
 	find /var/lib/cloudera-service-monitor/ts/ts_type_rollup_PT3600S/partitions/ -type d -ctime +2 | xargs rm -rf
 	find /var/lib/cloudera-service-monitor/ts/ts_type_rollup_PT600S/partitions/ -type d -ctime +2 | xargs rm -rf
-	find /var/lib/cloudera-service-monitor/ts/type/partitions/ -type d -ctime +2 | xargs rm –rf
+	find /var/lib/cloudera-service-monitor/ts/type/partitions/ -type d -ctime +2 | xargs rm -rf
 fi
